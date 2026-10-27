@@ -3,3 +3,68 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+h1{
+    text-align: center;
+    margin: 12px;
+}
+
+.container{
+    background-color: lightblue;
+    width: 300px;
+    margin: 10px auto;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.display{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    height: 50px;
+    margin: 8px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 4px;
+    font-size: 28px;
+}
+
+.buttons{
+    margin: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.buttons button{
+    padding: 8px;
+    font-size: 16px;
+}
+
+.buttons .clear{
+    flex: 100%;
+}
+.buttons .clear button{
+    width: 100%;
+}
+
+.digits button, .operators button{
+    min-width: 50px;
+    flex: 1;
+}
+
+.digits{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 4px;
+    flex: 2;
+}
+
+.operators{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 4px;
+    flex: 1;
+}
